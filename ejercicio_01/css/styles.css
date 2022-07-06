@@ -1,0 +1,72 @@
+/* Importamos fuentes de fonts.google.com */
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans:wght@400;700&family=PT+Serif+Caption&display=swap");
+
+/* Estilos */
+body {
+  font-family: "PT Sans", sans-serif;
+  color: #04146c;
+  font-size: 40px;
+}
+
+h1 {
+  color: #0a2ff1;
+  font-size: 80px;
+}
+
+h2,
+ul {
+  font-family: "PT Serif Caption", serif;
+  font-weight: 700;
+  color: #04146c;
+}
+
+ul {
+  font-weight: 400;
+}
+
+/* Aplicamos flex */
+nav {
+  display: flex;
+  padding: 0 40px;
+}
+
+a {
+  color: #04146c;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+/* Trabajamos con pseudo elementos */
+a::after {
+  content: "/";
+}
+.activo::after {
+  content: "";
+}
+
+/* Estilo */
+.activo {
+  margin-left: auto;
+  font-weight: bold;
+  color: #0a2ff1;
+}
+
+/* Aplicamos padding */
+main {
+  padding-left: 40px;
+}
+
+/* Trabajamos con pseudo clases */
+ul:first-of-type li:nth-child(1) {
+  list-style-image: url(../icon/vector.svg);
+}
+ul:first-of-type li:nth-child(2) {
+  list-style-image: url(../icon/foto.svg);
+}
+
+ul:nth-of-type(2) li:nth-child(1) {
+  list-style-image: url(../icon/licencia.svg);
+}
+ul:nth-of-type(2) li:nth-child(2) {
+  list-style-image: url(../icon/precio.svg);
+}
